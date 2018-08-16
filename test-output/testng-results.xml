@@ -1,201 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="56331" started-at="2018-08-14T12:11:38Z" finished-at="2018-08-14T12:12:34Z">
+  <suite name="Suite" duration-ms="199471" started-at="2018-08-16T12:19:24Z" finished-at="2018-08-16T12:22:43Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="56331" started-at="2018-08-14T12:11:38Z" finished-at="2018-08-14T12:12:34Z">
+    <test name="Test" duration-ms="199471" started-at="2018-08-16T12:19:24Z" finished-at="2018-08-16T12:22:43Z">
       <class name="Test.VC">
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:Test.VC@29774679]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-08-14T17:41:38Z" finished-at="2018-08-14T17:41:38Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
-34248704587	addons.manager	DEBUG	Starting provider: LightweightThemeManager
-1534248704587	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
-1534248704587	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
-1534248704588	addons.manager	DEBUG	Starting provider: GMPProvider
-1534248704604	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
-1534248704605	addons.manager	DEBUG	Provider finished startup: GMPProvider
-1534248704605	addons.manager	DEBUG	Starting provider: PluginProvider
-1534248704605	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
-1534248704606	addons.manager	DEBUG	Provider finished startup: PluginProvider
-1534248704606	addons.manager	DEBUG	Completed startup sequence
-1534248705919	addons.xpi	WARN	disabling legacy extension fxdriver@googlecode.com
-1534248706023	addons.xpi	WARN	disabling legacy extension fxdriver@googlecode.com
-1534248709672	addons.repository	DEBUG	No addons.json found.
-1534248709721	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
-1534248709722	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
-1534248709722	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
-1534248709774	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 24
-1534248710327	addons.xpi	INFO	Mapping fxdriver@googlecode.com to /tmp/anonymous8166330652337715470webdriver-profile/extensions/fxdriver@googlecode.com
-1534248710328	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: /tmp/anonymous8166330652337715470webdriver-profile/extensions/webdriver-staging
-1534248710328	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
-1534248710330	addons.xpi	INFO	Mapping activity-stream@mozilla.org to /usr/lib64/firefox/browser/features/activity-stream@mozilla.org.xpi
-1534248710330	addons.xpi	INFO	Mapping aushelper@mozilla.org to /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
-1534248710330	addons.xpi	INFO	Mapping firefox@getpocket.com to /usr/lib64/firefox/browser/features/firefox@getpocket.com.xpi
-1534248710330	addons.xpi	INFO	Mapping followonsearch@mozilla.com to /usr/lib64/firefox/browser/features/followonsearch@mozilla.com.xpi
-1534248710331	addons.xpi	INFO	Mapping formautofill@mozilla.org to /usr/lib64/firefox/browser/features/formautofill@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping onboarding@mozilla.org to /usr/lib64/firefox/browser/features/onboarding@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping screenshots@mozilla.org to /usr/lib64/firefox/browser/features/screenshots@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping webcompat@mozilla.org to /usr/lib64/firefox/browser/features/webcompat@mozilla.org.xpi
-1534248710332	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
-1534248710333	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
-1534248710333	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
-1534248710333	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
-1534248710334	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
-1534248710334	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
-1534248710335	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
-1534248710335	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
-1534248710336	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
-1534248710336	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /usr/lib64/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
-1534248710337	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
-1534248710338	addons.xpi	DEBUG	getInstallState changed: false, state: {}
-JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
-
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'swapnil', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.16.7-100.fc26.x86_64', java.version: '1.8.0_171'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
-34248704587	addons.manager	DEBUG	Starting provider: LightweightThemeManager
-1534248704587	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
-1534248704587	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
-1534248704588	addons.manager	DEBUG	Starting provider: GMPProvider
-1534248704604	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
-1534248704605	addons.manager	DEBUG	Provider finished startup: GMPProvider
-1534248704605	addons.manager	DEBUG	Starting provider: PluginProvider
-1534248704605	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
-1534248704606	addons.manager	DEBUG	Provider finished startup: PluginProvider
-1534248704606	addons.manager	DEBUG	Completed startup sequence
-1534248705919	addons.xpi	WARN	disabling legacy extension fxdriver@googlecode.com
-1534248706023	addons.xpi	WARN	disabling legacy extension fxdriver@googlecode.com
-1534248709672	addons.repository	DEBUG	No addons.json found.
-1534248709721	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
-1534248709722	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
-1534248709722	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
-1534248709774	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 24
-1534248710327	addons.xpi	INFO	Mapping fxdriver@googlecode.com to /tmp/anonymous8166330652337715470webdriver-profile/extensions/fxdriver@googlecode.com
-1534248710328	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: /tmp/anonymous8166330652337715470webdriver-profile/extensions/webdriver-staging
-1534248710328	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
-1534248710330	addons.xpi	INFO	Mapping activity-stream@mozilla.org to /usr/lib64/firefox/browser/features/activity-stream@mozilla.org.xpi
-1534248710330	addons.xpi	INFO	Mapping aushelper@mozilla.org to /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
-1534248710330	addons.xpi	INFO	Mapping firefox@getpocket.com to /usr/lib64/firefox/browser/features/firefox@getpocket.com.xpi
-1534248710330	addons.xpi	INFO	Mapping followonsearch@mozilla.com to /usr/lib64/firefox/browser/features/followonsearch@mozilla.com.xpi
-1534248710331	addons.xpi	INFO	Mapping formautofill@mozilla.org to /usr/lib64/firefox/browser/features/formautofill@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping onboarding@mozilla.org to /usr/lib64/firefox/browser/features/onboarding@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping screenshots@mozilla.org to /usr/lib64/firefox/browser/features/screenshots@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping webcompat@mozilla.org to /usr/lib64/firefox/browser/features/webcompat@mozilla.org.xpi
-1534248710332	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
-1534248710333	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
-1534248710333	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
-1534248710333	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
-1534248710334	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
-1534248710334	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
-1534248710335	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
-1534248710335	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
-1534248710336	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
-1534248710336	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /usr/lib64/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
-1534248710337	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
-1534248710338	addons.xpi	DEBUG	getInstallState changed: false, state: {}
-JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
-
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'swapnil', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.16.7-100.fc26.x86_64', java.version: '1.8.0_171'
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
-	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:218)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
-	at Test.VC.beforeClass(VC.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
-34248704587	addons.manager	DEBUG	Starting provider: LightweightThemeManager
-1534248704587	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
-1534248704587	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
-1534248704588	addons.manager	DEBUG	Starting provider: GMPProvider
-1534248704604	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
-1534248704605	addons.manager	DEBUG	Provider finished startup: GMPProvider
-1534248704605	addons.manager	DEBUG	Starting provider: PluginProvider
-1534248704605	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
-1534248704606	addons.manager	DEBUG	Provider finished startup: PluginProvider
-1534248704606	addons.manager	DEBUG	Completed startup sequence
-1534248705919	addons.xpi	WARN	disabling legacy extension fxdriver@googlecode.com
-1534248706023	addons.xpi	WARN	disabling legacy extension fxdriver@googlecode.com
-1534248709672	addons.repository	DEBUG	No addons.json found.
-1534248709721	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
-1534248709722	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
-1534248709722	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
-1534248709774	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 24
-1534248710327	addons.xpi	INFO	Mapping fxdriver@googlecode.com to /tmp/anonymous8166330652337715470webdriver-profile/extensions/fxdriver@googlecode.com
-1534248710328	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: /tmp/anonymous8166330652337715470webdriver-profile/extensions/webdriver-staging
-1534248710328	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
-1534248710330	addons.xpi	INFO	Mapping activity-stream@mozilla.org to /usr/lib64/firefox/browser/features/activity-stream@mozilla.org.xpi
-1534248710330	addons.xpi	INFO	Mapping aushelper@mozilla.org to /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
-1534248710330	addons.xpi	INFO	Mapping firefox@getpocket.com to /usr/lib64/firefox/browser/features/firefox@getpocket.com.xpi
-1534248710330	addons.xpi	INFO	Mapping followonsearch@mozilla.com to /usr/lib64/firefox/browser/features/followonsearch@mozilla.com.xpi
-1534248710331	addons.xpi	INFO	Mapping formautofill@mozilla.org to /usr/lib64/firefox/browser/features/formautofill@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping onboarding@mozilla.org to /usr/lib64/firefox/browser/features/onboarding@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping screenshots@mozilla.org to /usr/lib64/firefox/browser/features/screenshots@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping webcompat@mozilla.org to /usr/lib64/firefox/browser/features/webcompat@mozilla.org.xpi
-1534248710332	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
-1534248710333	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
-1534248710333	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
-1534248710333	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
-1534248710334	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
-1534248710334	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
-1534248710335	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
-1534248710335	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
-1534248710336	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
-1534248710336	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /usr/lib64/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
-1534248710337	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
-1534248710338	addons.xpi	DEBUG	getInstallState changed: false, state: {}
-JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
-
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
-	... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:Test.VC@29ee9faa]" name="beforeClass" is-config="true" duration-ms="19626" started-at="2018-08-16T17:52:24Z" finished-at="2018-08-16T17:52:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="Test123()[pri:0, instance:Test.VC@29774679]" name="Test123" duration-ms="2" started-at="2018-08-14T17:42:34Z" finished-at="2018-08-14T17:42:34Z">
+        <test-method status="PASS" signature="Test123()[pri:0, instance:Test.VC@29ee9faa]" name="Test123" duration-ms="1" started-at="2018-08-16T17:52:43Z" finished-at="2018-08-16T17:52:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test123 -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:Test.VC@29774679]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-08-14T17:42:34Z" finished-at="2018-08-14T17:42:34Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:Test.VC@29ee9faa]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-08-16T17:52:43Z" finished-at="2018-08-16T17:52:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- Test.VC -->
+      <class name="Test.NewTest">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:Test.NewTest@59fa1d9b]" name="LaunchBrowser" is-config="true" duration-ms="10062" started-at="2018-08-16T17:49:24Z" finished-at="2018-08-16T17:49:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="FAIL" signature="vwLogin(java.lang.String, java.lang.String)[pri:0, instance:Test.NewTest@59fa1d9b]" name="vwLogin" duration-ms="132224" started-at="2018-08-16T17:49:34Z" finished-at="2018-08-16T17:51:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[administrator]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //div[contains(@class,'x-box-layout-c')]//span[text()='OK']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
+System info: host: 'swapnil', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.16.7-100.fc26.x86_64', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 22134, moz:profile: /tmp/rust_mozprofile.NoZGyC..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.16.7-100.fc26.x86_64, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 8489f4ec-f62a-461b-8f36-81e9cad3d7b3
+*** Element info: {Using=xpath, value=//div[contains(@class,'x-box-layout-c')]//span[text()='OK']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[contains(@class,'x-box-layout-c')]//span[text()='OK']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
+System info: host: 'swapnil', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.16.7-100.fc26.x86_64', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 22134, moz:profile: /tmp/rust_mozprofile.NoZGyC..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.16.7-100.fc26.x86_64, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 8489f4ec-f62a-461b-8f36-81e9cad3d7b3
+*** Element info: {Using=xpath, value=//div[contains(@class,'x-box-layout-c')]//span[text()='OK']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Test.NewTest.vwLogin(NewTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vwLogin -->
+        <test-method status="FAIL" signature="addHyperV()[pri:0, instance:Test.NewTest@59fa1d9b]" name="addHyperV" duration-ms="37201" started-at="2018-08-16T17:51:46Z" finished-at="2018-08-16T17:52:23Z">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/root/swapnilVC.xls (No such file or directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /root/swapnilVC.xls (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at main.ExcelApiTest.<init>(ExcelApiTest.java:36)
+	at Test.NewTest.fillHyperv(NewTest.java:115)
+	at Test.NewTest.addHyperV(NewTest.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addHyperV -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Test.NewTest@59fa1d9b]" name="CloseBrowser" is-config="true" duration-ms="337" started-at="2018-08-16T17:52:23Z" finished-at="2018-08-16T17:52:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Test.NewTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

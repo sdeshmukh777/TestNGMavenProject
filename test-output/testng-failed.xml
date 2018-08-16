@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <parameter name="sUname" value="administrator"/>
+  <parameter name="sPassword" value="admin"/>
+  <test name="Test(failed)" preserve-order="true">
+    <parameter name="sUname" value="administrator"/>
+    <parameter name="sPassword" value="admin"/>
     <classes>
       <class name="Test.VC">
         <methods>
           <include name="beforeClass"/>
-          <include name="Test123"/>
+          <include name="afterClass"/>
         </methods>
       </class> <!-- Test.VC -->
+      <class name="Test.NewTest">
+        <methods>
+          <include name="vwLogin" invocation-numbers="0"/>
+          <include name="CloseBrowser"/>
+          <include name="LaunchBrowser"/>
+          <include name="addHyperV"/>
+        </methods>
+      </class> <!-- Test.NewTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

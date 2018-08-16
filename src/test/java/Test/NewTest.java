@@ -23,11 +23,11 @@ public class NewTest {
 
 	@BeforeClass
 	public void LaunchBrowser() throws Exception {
-		// It create firefox profile
-		FirefoxProfile profile = new FirefoxProfile();
-
-		// This will set the true value
-		profile.setAcceptUntrustedCertificates(true);
+		/*
+		 * // It create firefox profile FirefoxProfile profile = new FirefoxProfile();
+		 * 
+		 * // This will set the true value profile.setAcceptUntrustedCertificates(true);
+		 */
 		// Launch Browser
 
 		System.setProperty("webdriver.gecko.driver", "/root/swapnil/Selenium/geckodriver");
@@ -57,9 +57,33 @@ public class NewTest {
 
 	}
 
-	@Test(priority = 1)
-	public void AddVC() throws Exception {
+	/*
+	 * @Test(priority = 1) public void AddVC() throws Exception {
+	 * 
+	 * Thread.sleep(10000); WebElement s = driver.findElement(By.xpath(
+	 * "//div[contains(@id,'body')]//a[starts-with(@id,'tab')][7]"));
+	 * ClickOn(driver, s, 120); Thread.sleep(10000); WebElement integ =
+	 * driver.findElement(By.xpath(
+	 * "//div[contains(@id,'container')]/div[text()='Integrations']"));
+	 * ClickOn(driver, integ, 120); Thread.sleep(5000); driver.findElement(
+	 * By.xpath(
+	 * "(//div[contains(@class,'x-box-inner')]//a[contains(@id,'button')]//span[text()='View'])[7]"
+	 * )) .click(); Thread.sleep(5000); boolean butnew =
+	 * driver.findElement(By.xpath(
+	 * "//div[contains(@id,'probe-management-sub-toolbar-')]/a[contains(@class,'x-btn-vw-sub-nav-toolbar-small')]//span[text()='New']"
+	 * )) .isDisplayed();
+	 * 
+	 * if (butnew == true) { Thread.sleep(5000); driver.findElement(By.xpath(
+	 * "//div[contains(@id,'probe-management-sub-toolbar-')]/a[contains(@class,'x-btn-vw-sub-nav-toolbar-small')]//span[text()='New']"
+	 * )) .click(); FillVCDetails(); }
+	 * 
+	 * else { Thread.sleep(5000); FillVCDetails(); }
+	 * 
+	 * }
+	 */
 
+	@Test(priority = 1)
+	public void addHyperV() throws Exception {
 		Thread.sleep(10000);
 		WebElement s = driver.findElement(By.xpath("//div[contains(@id,'body')]//a[starts-with(@id,'tab')][7]"));
 		ClickOn(driver, s, 120);
@@ -71,44 +95,88 @@ public class NewTest {
 				By.xpath("(//div[contains(@class,'x-box-inner')]//a[contains(@id,'button')]//span[text()='View'])[7]"))
 				.click();
 		Thread.sleep(5000);
-		boolean butnew = driver.findElement(By.xpath(
-				"//div[contains(@id,'probe-management-sub-toolbar-')]/a[contains(@class,'x-btn-vw-sub-nav-toolbar-small')]//span[text()='New']"))
-				.isDisplayed();
 
-		if (butnew == true) {
-			Thread.sleep(5000);
-			driver.findElement(By.xpath(
-					"//div[contains(@id,'probe-management-sub-toolbar-')]/a[contains(@class,'x-btn-vw-sub-nav-toolbar-small')]//span[text()='New']"))
-					.click();
-			FillVCDetails();
-		}
-
-		else {
-			Thread.sleep(5000);
-			FillVCDetails();
-		}
-
-	}
-
-	@Test(priority = 2)
-	public void addHyperV() throws InterruptedException {
-		Thread.sleep(10000);
-		WebElement s = driver.findElement(By.xpath("//div[contains(@id,'body')]//a[starts-with(@id,'tab')][7]"));
-		ClickOn(driver, s, 120);
-		Thread.sleep(10000);
-		WebElement integ = driver.findElement(By.xpath("//div[contains(@id,'container')]/div[text()='Integrations']"));
-		ClickOn(driver, integ, 120);
-		Thread.sleep(5000);
-		driver.findElement(
-				By.xpath("(//div[contains(@class,'x-box-inner')]//a[contains(@id,'button')]//span[text()='View'])[6]"))
+		driver.findElement(By.xpath("//div[contains(@class,'x-box-scroller-body-horizontal')]//span[text()='Hosts']"))
 				.click();
 		Thread.sleep(5000);
+
+		fillHyperv();
+
+		System.out.println("hyper-v probe added");
 	}
 
 	@AfterClass
 	public void CloseBrowser() {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.quit();
+	}
+
+	public void fillHyperv() throws Exception {
+		ExcelApiTest getdata = new ExcelApiTest("/root/swapnilVC.xls", "Sheet1");
+
+		for (int i = 2; i <= 5; i++) {
+
+			driver.findElement(
+					By.xpath("(//div[contains(@class,'x-box-layout-ct x-panel-body-default')]//span[text()='Add'])[6]"))
+					.click();
+			Thread.sleep(5000);
+
+			String name = getdata.getData(i, 0);
+			String hostname = getdata.getData(i, 1);
+			String domain = getdata.getData(i, 2);
+			String username = getdata.getData(i, 3);
+			String password = getdata.getData(i, 4);
+
+			driver.findElement(By.xpath("(//div[starts-with(@aria-labelledby,'probe-hyperv-host-window-')]//input)[5]"))
+					.sendKeys(name);
+			Thread.sleep(1000);
+
+			driver.findElement(By.xpath("(//div[starts-with(@aria-labelledby,'probe-hyperv-host-window-')]//input)[6]"))
+					.sendKeys(hostname);
+			Thread.sleep(1000);
+
+			driver.findElement(By.xpath("(//div[starts-with(@aria-labelledby,'probe-hyperv-host-window-')]//input)[7]"))
+					.sendKeys(domain);
+			Thread.sleep(1000);
+
+			driver.findElement(By.xpath("(//div[starts-with(@aria-labelledby,'probe-hyperv-host-window-')]//input)[8]"))
+					.sendKeys(username);
+			Thread.sleep(1000);
+
+			driver.findElement(By.xpath("(//div[starts-with(@aria-labelledby,'probe-hyperv-host-window-')]//input)[9]"))
+					.sendKeys(password);
+			Thread.sleep(1000);
+
+			driver.findElement(
+					By.xpath("(//div[starts-with(@aria-labelledby,'probe-hyperv-host-window-')]//input)[10]")).click();
+			Thread.sleep(1000);
+			
+			
+			driver.findElement(By.xpath("(//div[starts-with(@aria-labelledby,'probe-hyperv-host-window-')]//a)[1]"))
+					.click();
+			Thread.sleep(1000);
+			
+		}
+
+			driver.findElement(By.xpath("(//div[starts-with(@class,'x-column-header-checkbox')]//span)[2]")).click();
+			Thread.sleep(1000);
+
+			driver.findElement(By
+					.xpath("((//div[starts-with(@id,'edit-probe-container')]//div[@class='x-panel-bodyWrap'])//a)[8]"))
+					.click();
+			Thread.sleep(1000);
+
+			driver.findElement(By
+					.xpath("((//div[starts-with(@id,'edit-probe-container')]//div[@class='x-panel-bodyWrap'])//a)[11]"))
+					.click();
+			Thread.sleep(1000);
+
+			driver.findElement(By.xpath("//div[starts-with(@id,'kick-off-discovery-window-')]//span[text()='Yes']"))
+					.click();
+			Thread.sleep(1000);
+
+		
+
 	}
 
 	public void FillVCDetails() throws Exception {

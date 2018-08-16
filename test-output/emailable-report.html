@@ -1,101 +1,92 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">56,331</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Test.VC</td><td><a href="#m0">beforeClass</a></td><td rowspan="1">1534248698406</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">Test.VC</td><td><a href="#m1">afterClass</a></td><td rowspan="1">1534248754731</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Test.VC</td><td><a href="#m2">Test123</a></td><td rowspan="1">1534248754221</td><td rowspan="1">2</td></tr></tbody></table><h2>Test</h2><h3 id="m0">Test.VC#beforeClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
-34248704587	addons.manager	DEBUG	Starting provider: LightweightThemeManager
-1534248704587	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
-1534248704587	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
-1534248704588	addons.manager	DEBUG	Starting provider: GMPProvider
-1534248704604	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
-1534248704605	addons.manager	DEBUG	Provider finished startup: GMPProvider
-1534248704605	addons.manager	DEBUG	Starting provider: PluginProvider
-1534248704605	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
-1534248704606	addons.manager	DEBUG	Provider finished startup: PluginProvider
-1534248704606	addons.manager	DEBUG	Completed startup sequence
-1534248705919	addons.xpi	WARN	disabling legacy extension fxdriver@googlecode.com
-1534248706023	addons.xpi	WARN	disabling legacy extension fxdriver@googlecode.com
-1534248709672	addons.repository	DEBUG	No addons.json found.
-1534248709721	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
-1534248709722	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
-1534248709722	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
-1534248709774	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 24
-1534248710327	addons.xpi	INFO	Mapping fxdriver@googlecode.com to /tmp/anonymous8166330652337715470webdriver-profile/extensions/fxdriver@googlecode.com
-1534248710328	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: /tmp/anonymous8166330652337715470webdriver-profile/extensions/webdriver-staging
-1534248710328	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
-1534248710330	addons.xpi	INFO	Mapping activity-stream@mozilla.org to /usr/lib64/firefox/browser/features/activity-stream@mozilla.org.xpi
-1534248710330	addons.xpi	INFO	Mapping aushelper@mozilla.org to /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
-1534248710330	addons.xpi	INFO	Mapping firefox@getpocket.com to /usr/lib64/firefox/browser/features/firefox@getpocket.com.xpi
-1534248710330	addons.xpi	INFO	Mapping followonsearch@mozilla.com to /usr/lib64/firefox/browser/features/followonsearch@mozilla.com.xpi
-1534248710331	addons.xpi	INFO	Mapping formautofill@mozilla.org to /usr/lib64/firefox/browser/features/formautofill@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping onboarding@mozilla.org to /usr/lib64/firefox/browser/features/onboarding@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping screenshots@mozilla.org to /usr/lib64/firefox/browser/features/screenshots@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping webcompat@mozilla.org to /usr/lib64/firefox/browser/features/webcompat@mozilla.org.xpi
-1534248710332	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
-1534248710333	addons.xpi	WARN	Can&apos;t get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
-1534248710333	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
-1534248710333	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
-1534248710334	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
-1534248710334	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
-1534248710335	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
-1534248710335	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
-1534248710336	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
-1534248710336	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /usr/lib64/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
-1534248710337	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
-1534248710338	addons.xpi	DEBUG	getInstallState changed: false, state: {}
-JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
-
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">199.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">Test.NewTest<td><a href="#m1"><b>addHyperV</b>  </a></td><td class="numi">1</td><td>1534422106561</td><td class="numi">37201</td></tr><tr class="failedodd"><td><a href="#m2"><b>vwLogin</b>  </a></td><td class="numi">1</td><td>1534421974333</td><td class="numi">132224</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">Test.VC<td><a href="#m3"><b>Test123</b>  </a></td><td class="numi">1</td><td>1534422163730</td><td class="numi">1</td></tr>
+</table>
+<h1>Test</h1>
+<a id="m1"></a><h2>Test.NewTest:addHyperV</h2>
+<div style="padding-left:3em">
+<p>/root/swapnilVC.xls (No such file or directory)</p>
+java.io.FileInputStream.open0(Native Method)
+<br/>at java.io.FileInputStream.open(FileInputStream.java:195)
+<br/>at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+<br/>at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+<br/>at main.ExcelApiTest.&lt;init&gt;(ExcelApiTest.java:36)
+<br/>at Test.NewTest.fillHyperv(NewTest.java:115)
+<br/>at Test.NewTest.addHyperV(NewTest.java:103)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>Test.NewTest:vwLogin</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">administrator</td>
+<td style="padding-left:.5em;padding-right:2em">admin</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Unable to locate element: //div[contains(@class,&apos;x-box-layout-c&apos;)]//span[text()=&apos;OK&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:19.891Z&apos;
 System info: host: &apos;swapnil&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.16.7-100.fc26.x86_64&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
-	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
-	at Test.VC.beforeClass(VC.java:23)
-Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
-34248704587	addons.manager	DEBUG	Starting provider: LightweightThemeManager
-1534248704587	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
-1534248704587	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
-1534248704588	addons.manager	DEBUG	Starting provider: GMPProvider
-1534248704604	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
-1534248704605	addons.manager	DEBUG	Provider finished startup: GMPProvider
-1534248704605	addons.manager	DEBUG	Starting provider: PluginProvider
-1534248704605	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
-1534248704606	addons.manager	DEBUG	Provider finished startup: PluginProvider
-1534248704606	addons.manager	DEBUG	Completed startup sequence
-1534248705919	addons.xpi	WARN	disabling legacy extension fxdriver@googlecode.com
-1534248706023	addons.xpi	WARN	disabling legacy extension fxdriver@googlecode.com
-1534248709672	addons.repository	DEBUG	No addons.json found.
-1534248709721	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
-1534248709722	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
-1534248709722	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
-1534248709774	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 24
-1534248710327	addons.xpi	INFO	Mapping fxdriver@googlecode.com to /tmp/anonymous8166330652337715470webdriver-profile/extensions/fxdriver@googlecode.com
-1534248710328	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: /tmp/anonymous8166330652337715470webdriver-profile/extensions/webdriver-staging
-1534248710328	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
-1534248710330	addons.xpi	INFO	Mapping activity-stream@mozilla.org to /usr/lib64/firefox/browser/features/activity-stream@mozilla.org.xpi
-1534248710330	addons.xpi	INFO	Mapping aushelper@mozilla.org to /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
-1534248710330	addons.xpi	INFO	Mapping firefox@getpocket.com to /usr/lib64/firefox/browser/features/firefox@getpocket.com.xpi
-1534248710330	addons.xpi	INFO	Mapping followonsearch@mozilla.com to /usr/lib64/firefox/browser/features/followonsearch@mozilla.com.xpi
-1534248710331	addons.xpi	INFO	Mapping formautofill@mozilla.org to /usr/lib64/firefox/browser/features/formautofill@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping onboarding@mozilla.org to /usr/lib64/firefox/browser/features/onboarding@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping screenshots@mozilla.org to /usr/lib64/firefox/browser/features/screenshots@mozilla.org.xpi
-1534248710331	addons.xpi	INFO	Mapping webcompat@mozilla.org to /usr/lib64/firefox/browser/features/webcompat@mozilla.org.xpi
-1534248710332	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
-1534248710333	addons.xpi	WARN	Can&apos;t get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
-1534248710333	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
-1534248710333	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
-1534248710334	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
-1534248710334	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
-1534248710335	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
-1534248710335	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
-1534248710336	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
-1534248710336	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /usr/lib64/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
-1534248710337	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
-1534248710338	addons.xpi	DEBUG	getInstallState changed: false, state: {}
-JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
-
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
-	... 31 more
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">Test.VC#afterClass</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">Test.VC#Test123</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 22134, moz:profile: /tmp/rust_mozprofile.NoZGyC..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.16.7-100.fc26.x86_64, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 8489f4ec-f62a-461b-8f36-81e9cad3d7b3
+*** Element info: {Using=xpath, value=//div[contains(@class,&apos;x-box-layout-c&apos;)]//span[text()=&apos;OK&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+<br/>at Test.NewTest.vwLogin(NewTest.java:55)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>Test.VC:Test123</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
